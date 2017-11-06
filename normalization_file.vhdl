@@ -80,6 +80,8 @@ PROCESS(a,b) -- Latching the input values
 		--if(exp_a = 0) then exp_a := exp_a + 1; end if;
 		--if(exp_b = 0) then exp_b := exp_b + 1; end if;
 
+-- This is the part that me and Phillip will handle - the renormalization
+-- I hope this won't be too different from the project we are going to do lol
 		if(prod_term(47)='1') then prod_term := '0' & prod_term(47 downto 1); exp_out := exp_out + 1; 
 		elsif(prod_term(47)='0' and prod_term(46)='0') then
 		while(prod_term(46)/='1') loop
